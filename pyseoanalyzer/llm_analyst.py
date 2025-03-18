@@ -59,7 +59,7 @@ class SEORecommendations(BaseModel):
 class LLMSEOEnhancer:
     def __init__(self):
         self.llm = ChatAnthropic(
-            model="claude-3-sonnet-20240229",
+            model="claude-3-7-sonnet-latest",
             anthropic_api_key=os.environ.get("ANTHROPIC_API_KEY"),
             temperature=0,
             timeout=30,
